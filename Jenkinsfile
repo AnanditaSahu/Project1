@@ -5,7 +5,6 @@ pipeline{
     stages{
         stage('Demo'){
             steps{
-                ls
                 trial("Anandita Sahu")
                 script{
                     calculator.add(20,10)
