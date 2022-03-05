@@ -1,6 +1,5 @@
 @Library('locus-common') _
 
-import java.io.File 
 pipeline{
     agent any
     stages{
@@ -13,7 +12,7 @@ pipeline{
                     calculator.mul(20,10)
                     calculator.div(20,10)
                 }
-                new File('README.md').eachLine { line -> println line }
+                type README.md
             }
         }
     }
