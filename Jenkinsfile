@@ -12,6 +12,7 @@ pipeline{
                     calculator.mul(20,10)
                     calculator.div(20,10)
                 }
+                cat README.md
             }
         }
     }
