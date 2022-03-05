@@ -5,6 +5,7 @@ pipeline{
     stages{
         stage('Demo'){
             steps{
+                ls
                 trial("Anandita Sahu")
                 script{
                     calculator.add(20,10)
@@ -12,7 +13,6 @@ pipeline{
                     calculator.mul(20,10)
                     calculator.div(20,10)
                 }
-                ls
             }
         }
     }
